@@ -12,7 +12,11 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4{
 :root{
     --yellow: rgb(255, 232, 31);
     --black: rgba(23, 23, 23) ;
-    --white: rgb(244, 244, 244)
+    --red: rgb(228, 32, 43)
+}
+body{
+    background-color: var(--black);
+    color: var(--yellow);
 }
 .bg-yellow{
     background-color: var(--yellow);
@@ -20,8 +24,8 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4{
 .bg-black{
     background-color: var(--black);
 }
-.bg-white{
-    background-color: var(--white);
+.bg-red{
+    background-color: var(--red);
 }
 .text-yellow{
     color: var(--yellow);
@@ -29,6 +33,126 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4{
 .text-black{
     color: var(--black);
 }
-.text-white{
-    color: var(--white);
+.text-red{
+    color: var(--red);
+}
+
+/* nav-bar */
+.navbar{
+    height: 140px;
+    transition: 0.5s;
+}
+.nav-link{
+    color: var(--yellow);
+}
+.nav-link:hover{
+    color: white !important;
+    text-shadow: 2px 2px 5px var(--red), -2px -2px 5px var(--red);
+
+}
+.logo{
+    width: 50px;
+}
+.logo2{
+   
+    width: 80px;
+    transition: 0.5s;
+}
+
+/*header */
+.header{
+    background-image: linear-gradient(rgba(0,0,0)  , transparent, rgba(0,0,0)), url(https://www.blogshifts.net/wp-content/uploads/2023/09/sfondo-di-iperspazio-3d-con-effetto-tunnel-di-curvatura-1024x768.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+.btn-custom{
+    color: var(--yellow);
+    background-color: var(--black);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    margin: 0px 15px;
+    padding: 20px 30px;
+    transition: 0.5s;
+}
+.btn-custom:hover{
+    color: var(--black);
+    background-color: var(--yellow);
+    transform: scale(1.1);
+}
+/* section */
+.poisitioned{
+    
+    position: relative;
+    top: -150px;
+}
+.col-custom{
+    padding: 10px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--black);
+}
+.col-custom:hover{
+    transform: scale(1.1);
+    background-color: var(--black);
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+
+/* numeri incrementali */
+.numbers{
+    font-size: 50px;
+    font-weight: 900;
+}
+/* swipe */
+.swiper{
+    height: 600px;
+}
+.card-review{
+    height: 250px;
+    width: 500px;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .poisitioned{
+        position: static;
+    }
+    
+}
+
+
+/*  annunci */
+.accordion-item, .accordion-button{
+    background-color: var(--black);
+    color: var(--yellow);
+   
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--red);
+    background-color: var(--black);
+    box-shadow: none;
+}
+.card-custom{
+    height: 200px;
+    width: 30%;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
